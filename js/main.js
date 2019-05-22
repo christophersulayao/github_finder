@@ -17,7 +17,13 @@ $(document).ready(function(){
                     <h3 class="panel-title">${user.name}</h3>
                 </div>
                 <div class="panel-body">
-                    Panel Body
+                   <div class="row">
+                        <div class="col-md-3">
+                        <img src="${user.avatar_url}">
+                        </div>
+                        <div class="col-md-9">
+                        </div>
+                   </div>
                 </div>
             </div>
             `);
