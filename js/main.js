@@ -10,7 +10,17 @@ $(document).ready(function(){
                 client_secret:'dbd6b9442973d6c5657155e5bb85b63df76205d8',
             }
         }).done(function(user){
-            console.log(user);
+            $('#profile').html(`
+            ${user.name}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                <h3 class="panel-title">${user.name}</h3>
+                </div>
+                <div class="panel-body">
+                    Panel Body
+                </div>
+            </div>
+            `);
         });
     });
 });
